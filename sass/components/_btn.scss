@@ -1,0 +1,31 @@
+.btn {
+    height: 40px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    @media screen and (min-width: 480px) {
+        width: 194px;
+        
+    }
+    @media screen and(min-width:768px) {
+        width: 160px;
+    }
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--bg-primary-color);
+    }
+}
+
+.btn--dark {
+    color: var(--secondary-color);
+}
+
+.btn--light {
+    color: #ffffff;
+}

@@ -1,0 +1,20 @@
+// base
+@import './base/variables';
+@import './base/common';
+
+// layots
+@import './layots/header';
+@import './layots/hero';
+@import './layots/site-nav';
+@import './layots/about';
+@import './layots/price-list';
+@import './layots/feature-list';
+@import './layots/masters';
+@import './layots/contact-list';
+@import './layots/footer';
+// components
+@import './components/basic-description';
+@import './components/section';
+@import './components/pre__title';
+@import './components/btn';
+@import './components/container';

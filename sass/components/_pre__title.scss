@@ -1,0 +1,25 @@
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.pre-title--link {
+    letter-spacing: 0.2em;
+    text-transform: none;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.pre-title--rgba {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title--white {
+    color: var(--bg-primary-color);
+}

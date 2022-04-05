@@ -1,0 +1,34 @@
+.section {
+    padding: 84px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 100px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 130px 0;
+    }
+}
+
+.section--dark {
+    background-color: var(--bg-footer-color);
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--secondary-color);
+}
+
+.section__title--white {
+    color: #ffffff;
+}
+
+.section--contact {
+    background-color: var(--bg-footer-color);
+}
+
+.section--masters {
+    background-color: var(--bg-secondary-color);
+}
