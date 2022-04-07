@@ -1,10 +1,25 @@
-.hero {
+.hero{
     background-color: var(--bg-footer-color);
 }
+
+.hero__container-right{
+    flex-grow: 1;
+    background-color: var(--bg-footer-color);
+    padding: 272px 0 206px 96px;
+}
+
+.hero-list{
+    width: 93px;
+}
 .hero__title {
+    margin: 20px 0 20px 0;
     font-weight: 700;
     font-size: 72px;
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: #ffffff;
+}
+
+.hero__description{
+    width: 400px;
 }

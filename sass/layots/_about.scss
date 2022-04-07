@@ -1,5 +1,24 @@
+.about__list{
+
+display: flex;
+}
+.about__item + .about__item{
+margin-left: 30px;
+}
+
+.about__wrap{
+margin-left:64px ;
+}
+
+.about__title{
+margin-bottom: 20px;
+}
+
 .about__paragraph {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 500px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.86;
 }

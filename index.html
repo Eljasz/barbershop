@@ -19,9 +19,9 @@
 <body>
 
     <header class="header">
-        <div class="container">
+        <div class="container container--header">
             <nav class="header-nav">
-                <a href="/index.html"><img src="/img/Logo.svg"></a>
+                <a href="/index.html" class="logo"><img width="70" src="/img/Logo.svg"></a>
                 <ul class="site-nav">
                     <li class="site-nav__item"><a class="site-nav__link" href="#about-us">О нас</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="#service-price">Услуги и цены</a></li>
@@ -29,7 +29,7 @@
                     <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class=" header__wrapper">
                 <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
                 <button class=" btn btn--light" type="button">онлайн-запись</button>
             </div>
@@ -38,20 +38,22 @@
     <main>
         <!-- HERO SECTION -->
         <section class="hero">
+           <div class="container container--hero">
             <ul class="hero-list">
                 <li class="hero-list__item pre-title"><a class="pre-title pre-title--link" href="">Instagram</a></li>
                 <li class="hero-list__item pre-title"><a class="pre-title pre-title--link" href="">Youtube</a></li>
             </ul>
-            <div>
+            <div class="hero__container-right">
                 <p class="pre-title pre-title--rgba" lang="en">A hair salon for men in Kyiv</p>
                 <h1 class="hero__title" lang="en">BarberShop</h1>
-                <p class="basic-decription basic-decription--light">Мы эксперты в модных мужских стрижках.<br>
+                <p class="basic-decription basic-decription--light hero__description">Мы эксперты в модных мужских стрижках.
                     Работаем быстро, осторожно и со вкусом.</p>
             </div>
+           </div>
         </section>
         <!-- ABOUT US SECTION -->
         <section class="section" id="about-us">
-            <div>
+            <div class="container container--about">
                 <ul class="about__list">
                     <li class="about__item"><img src="./img/about-us/img-1-desktop-1x.jpg"
                             alt="мастер бреет бороду мужчине"></li>
@@ -59,26 +61,25 @@
                             alt="мастер делает аккантовку мужчине"> </li>
                 </ul>
                 <div class="about__wrap">
-                    <p class="pre-title">О НАС</p>
-                    <h2 class="section__title">Лучший Барбершоп
+                    <p class="pre-title pre-title--twenty" >О НАС</p>
+                    <h2 class="section__title  about__title">Лучший Барбершоп
                         твоего города</h2>
                     <p class="basic-decription">Если ты хочешь добавить в свой образ больше
                         уверенности – тебе точно к
                         нам.</p>
-                    <p class="about__paragraph">Мы команда, которая никогда не останавливается на достигнутом
-                        и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
-                        Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+                    <p class="about__paragraph">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
                     </p>
-                </div>
+                    
                 <button type="button" class="btn btn--dark">онлайн-запись</button>
+                </div>
             </div>
         </section>
         <!-- PRICE & SERVISE SECTION-->
         <section id="service-price" class="section section--dark">
             <div class="container">
-                <p class="pre-title pre-title--rgba">Проведи время в компании лучших мастеров</p>
-                <h2 class="section__title section__title--white">Услуги и цены</h2>
+                <p class="pre-title pre-title--rgba pre-title--twenty">Проведи время в компании лучших мастеров</p>
+                <h2 class="section__title section__title--white section__title--fourtyfour">Услуги и цены</h2>
+                <div class="price-list__wrapper">
                 <ul class="price-list">
                     <li class="price-list__item">
                         <p class="basic-decription basic-decription--light">Мужская стрижка</p>
@@ -116,12 +117,13 @@
                         <p class="basic-decription basic-decription--light">от 200 грн.</p>
                     </li>
                 </ul>
-                <button type="button" class="btn btn--light">онлайн-запись</button>
+            </div>
+                <button type="button" class="btn btn--light btn--price-list">онлайн-запись</button>
             </div>
         </section>
         <!-- FEATURES SECTION -->
         <section class="section">
-            <div>
+            <div class="container container--feature-list">
                 <ul class="feature-list">
                     <li class="feature-list__item"><span class="feature__inner">600</span>
                         <p class="feature__text">Довольных клиентов в день</p>
@@ -139,9 +141,9 @@
                     </li>
                 </ul>
                 <div>
-                    <p class="pre-title">старая традиционная школа</p>
-                    <h2 class="section__title">Почему приходят именно к нам?</h2>
-                    <p class="basic-decription">О нас говорят только хорошее. Но лучше 1 раз
+                    <p class="pre-title pre-title--twenty">старая традиционная школа</p>
+                    <h2 class="section__title feature-list__title">Почему приходят именно к нам?</h2>
+                    <p class="basic-decription feature-list__description">О нас говорят только хорошее. Но лучше 1 раз
                         увидеть и
                         прочувствовать, чем
                         10 раз прочитать. </p>
@@ -150,9 +152,9 @@
         </section>
         <!-- OUR MASTERS SECTION -->
         <section id="masters" class="section section--masters">
-            <div>
-                <p class="pre-title">для настоящих ценителей атмосферы</p>
-                <h2 class="section__title">Наши мастера</h2>
+            <div class="container">
+                <p class="pre-title pre-title--twenty">для настоящих ценителей атмосферы</p>
+                <h2 class="section__title section__title--fourtyfour">Наши мастера</h2>
                 <ul class="masters">
                     <li class="masters__item">
                         <img src="./img/masters/img-1-desktop-1x.jpg" alt="Джон Смит стрижет.">
@@ -194,9 +196,9 @@
             </div>
         </section>
         <section class="section">
-            <div>
+            <div class="container">
                 <h2 class="visually-hidden">Галлерея</h2>
-                <p class="pre-title">На латинском языке “барба” означает “борода”</p>
+                <p class="pre-title section__title--fourtyfour">На латинском языке “барба” означает “борода”</p>
                 <ul class="galary">
                     <li class="galary__item"><img src="./img/gallery/img-1-desktop-1x.jpg" alt="Наш мастер бреет."></li>
                     <li class="galary__item"><img src="./img/gallery/img-2-desktop-1x.jpg" alt="Наш мастер стрижет.">
@@ -207,15 +209,16 @@
                 </ul>
             </div>
         </section>
-
-        <section class="online-section">
-            <div>
-                <h2 class="pre-title pre-title--light">онлайн-запись</h2>
+        <div class="section__wrapper">
+        <section class="section section--dark section--online">
+            <div class="container">
+                <h2 class="section__title section__title--white section__title--fourtyfour">Онлайн-запись</h2>
+                <button class="btn btn--light">отправить</button>
             </div>
         </section>
-        <section id="contacts" class="section section--contact">
-            <div>
-                <h2 class="section__title section__title--white">Контакты</h2>
+        <section id="contacts" class="section section--dark">
+            <div class="container">
+                <h2 class="section__title section__title--white section__title--contact">Контакты</h2>
                 <address>
                     <ul class="contact-list">
                         <li class="contact-list__item"><a class="contact-list__link" href="" target="_blank"
@@ -227,14 +230,15 @@
                         <li class="contact-list__item"><a class="contact-list__link contact-list__link--decoration"
                                 href="mailto:barbershop@email.com">barbershop@email.com</a></li>
                     </ul>
-                    <b class="pre-title pre-title--white">Время работы</b>
-                    <p class="basic-decription basic-decription--light">Ежедневно с 9:00 до 22:00</p>
+                    <b class="pre-title pre-title--white contact-list__pre-title">Время работы</b>
+                    <p class="basic-decription basic-decription--light contact-list__text">Ежедневно с 9:00 до 22:00</p>
                 </address>
             </div>
         </section>
+    </div>
     </main>
     <footer>
-        <div>
+        <div class="container">
             <a href="" class="footer__link">&#169 Copyright</a>
             <ul class="footer__list">
                 <li class="footer__item">

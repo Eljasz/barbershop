@@ -1,3 +1,7 @@
+.contact-list__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .contact-list__link {
     font-weight: 400;
     font-size: 18px;
@@ -12,4 +16,13 @@
 
 .contact-list__link--decoration {
     text-decoration: underline;
+}
+
+.contact-list__pre-title{
+    display: block;
+    margin-top: 70px;
+}
+
+.contact-list__text{
+    margin-top: 20px;
 }

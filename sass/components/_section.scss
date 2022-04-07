@@ -1,17 +1,25 @@
 .section {
     padding: 84px 0;
-
+    outline: 5px solid tomato;
     @media screen and (min-width: 768px) {
         padding: 100px 0;
     }
     @media screen and (min-width: 1200px) {
         padding: 130px 0;
     }
+
+    &--dark {
+        background-color: var(--bg-footer-color);
+    }
+    
+    &--masters {
+        background-color: var(--bg-secondary-color);
+    }
+    &--online{
+        width: 50%;
+    }
 }
 
-.section--dark {
-    background-color: var(--bg-footer-color);
-}
 
 .section__title {
     font-weight: 700;
@@ -19,16 +27,21 @@
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--secondary-color);
+
+    &--white {
+        color: #ffffff;
+    }
+    
+   &--fourtyfour{
+       margin-bottom: 44px;
+   }
+   &--contact{
+    margin-bottom:  40px;
+}
 }
 
-.section__title--white {
-    color: #ffffff;
+.section__wrapper{
+    display: flex;
 }
 
-.section--contact {
-    background-color: var(--bg-footer-color);
-}
 
-.section--masters {
-    background-color: var(--bg-secondary-color);
-}

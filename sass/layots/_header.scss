@@ -1,7 +1,14 @@
 .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
     background-color: var(--bg-footer-color);
 }
+.header-nav{
+    display: flex;
+    align-items: center;
+}
 .header-tel {
+    margin-right:40px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -12,3 +19,7 @@
         color: var(--accent-color);
     }
 }
+
+// .header__wrapper{
+    
+// }

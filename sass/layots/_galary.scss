@@ -1,0 +1,9 @@
+.galary{
+    display: flex;
+    margin-right: -30px;
+}
+
+.galary__item{
+    margin-right: 30px;
+    width: calc((100% - 4 * 30px) /4);
+}

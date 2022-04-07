@@ -1,0 +1,17 @@
+
+.price-list{
+padding: 40px 30px;
+width: 50%;
+}
+.price-list__item{
+    display: flex;
+    justify-content: space-between;
+}
+.price-list__item:not(:last-child){
+margin-bottom: 20px;
+}
+
+.price-list__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
