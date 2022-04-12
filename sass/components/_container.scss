@@ -32,3 +32,14 @@
 .container--feature-list{
     display: flex;
 }
+
+.container-half{
+    margin: 0 auto;
+    width: 600px;
+    padding: 0 15px 0 15px;
+    &--contact{
+        width: 625px;
+        padding-left: 100px;
+
+    }
+}

@@ -1,4 +1,6 @@
 .pre-title {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -7,7 +9,20 @@
     color: #303030;
 }
 
-.pre-title--link {
+.pre-title::before{
+    margin-right: 21px;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+}
+
+
+
+.pre-title__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
     letter-spacing: 0.2em;
     text-transform: none;
     &:hover,
@@ -16,12 +31,42 @@
     }
 }
 
+.pre-title__link--first{
+    display: flex;
+    align-items: center;
+    &::before{
+        
+        margin-right: 39px;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: var(--secondary-color);
+        }
+}
+
+
 .pre-title--rgba {
     color: rgba(157, 164, 189, 0.6);
+
+    &::before{
+        margin-right: 21px;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.6);
+    }
 }
 
 .pre-title--white {
     color: var(--bg-primary-color);
+    &::before{
+        margin-right: 21px;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.6);
+    }
+    
 }
 
 .pre-title--twenty{

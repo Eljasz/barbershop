@@ -1,0 +1,29 @@
+.social{
+    display: flex;
+    margin-top: 30px;
+}
+
+.social__item +.social__item{
+    margin-left: 10px;
+}
+.social__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-primary-color);
+    
+}
+
+.social__icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-color);
+
+.social__link:hover &,
+.social__link:focus &{
+    fill: var(--accent-color);
+}
+}

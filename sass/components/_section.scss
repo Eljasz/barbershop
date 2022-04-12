@@ -15,8 +15,17 @@
     &--masters {
         background-color: var(--bg-secondary-color);
     }
+
     &--online{
-        width: 50%;
+        flex-grow: 1;
+        background-color: var(--bg-footer-color);
+    }
+    &--contact{
+        background-image: url('../img/contacs/img-1-desktop-1x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: var(--bg-footer-color);
     }
 }
 
@@ -41,7 +50,10 @@
 }
 
 .section__wrapper{
+    margin: 0 auto;
     display: flex;
+    height: 644px;
+    max-width: 1280px;
 }
 
 

@@ -1,8 +1,11 @@
+
 .contact-list__item:not(:last-child) {
     margin-bottom: 20px;
 }
 
 .contact-list__link {
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
@@ -26,3 +29,17 @@
 .contact-list__text{
     margin-top: 20px;
 }
+
+.contact-list__icon{
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    stroke: #9DA4BD;
+    fill: transparent;
+
+.contact-list__link:hover &,
+.contact-list__link:focus & {
+ stroke: var(--accent-color);
+}
+}
+

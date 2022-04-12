@@ -5,5 +5,5 @@
 
 .galary__item{
     margin-right: 30px;
-    width: calc((100% - 4 * 30px) /4);
+    flex-basis: calc((100% - 4 * 30px) /4);
 }

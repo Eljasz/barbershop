@@ -1,3 +1,15 @@
 .logo{
     margin-right: 70px;
+
+
+}
+.logo__icon{
+    width: 66px;
+    height: 55px;
+    fill: var(--secondary-color);
+    .logo:hover &,
+    .logo:focus &{
+    fill: var(--accent-color);
+    }
+    
 }
