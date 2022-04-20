@@ -1,6 +1,5 @@
 .masters{
     display: flex;
-    margin-right: -30px;
 }
 .masters__item{
     display: flex;
@@ -8,9 +7,13 @@
     justify-content: center;
     align-items: center;
     min-width: 370px;
-    margin-right: 30px;
-    flex-basis: calc((100% - 90px) /3);
+
 }
+
+.masters__item:not(:last-child){
+    margin-right: 30px;
+}
+
 .masters__title {
     margin-top: 30px;
     font-weight: 400;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,16 +38,18 @@
         <!-- HERO SECTION -->
         <section class="hero">
            <div class="container container--hero">
-            <ul class="hero-list">
-                <li class="hero-list__item"><a class="pre-title__link" href="">Instagram</a></li>
-                <li class="hero-list__item"><a class="pre-title__link" href="">Youtube</a></li>
-            </ul>
+            <div class="hero__container-left">
+                <ul class="hero-list">
+                    <li class="hero-list__item"><a class="pre-title__link pre-title__link--first" href="">Instagram</a></li>
+                    <li class="hero-list__item"><a class="pre-title__link" href="">Youtube</a></li>
+                </ul>
+            </div>
             <div class="hero__container-right">
-                <p class="pre-title pre-title--rgba" lang="en">A hair salon for men in Kyiv</p>
+                <p class="pre-title pre-title--hero" lang="en">A hair salon for men in Kyiv</p>
                 <h1 class="hero__title" lang="en">BarberShop</h1>
                 <p class="basic-decription basic-decription--light hero__description">Мы эксперты в модных мужских стрижках.
                     Работаем быстро, осторожно и со вкусом.</p>
-            </div>
+                </div>
            </div>
         </section>
         <!-- ABOUT US SECTION -->
@@ -135,12 +136,12 @@
                         <span class="feature__inner">20</span>
                         <p class="feature__text">Лучших мастеров Киева </p>
                     </li>
-                    <li class="feature-list__item">
+                    <li class="feature-list__item feature-list__item--spec">
                         <span class="feature__inner">100</span>
                         <p class="feature__text">Подарков постоянным клиентам</p>
                     </li>
                 </ul>
-                <div>
+                <div class="feature-list__container">
                     <p class="pre-title pre-title--twenty">старая традиционная школа</p>
                     <h2 class="section__title feature-list__title">Почему приходят именно к нам?</h2>
                     <p class="basic-decription feature-list__description">О нас говорят только хорошее. Но лучше 1 раз
@@ -211,13 +212,18 @@
         </section>
         <div class="section__wrapper">
         <section class="section section--online">
-            <div class=" container-half">
+            <div class="container-half container-half--online">
                 <h2 class="section__title section__title--white section__title--fourtyfour">Онлайн-запись</h2>
-                <button class="btn btn--light">отправить</button>
+                <form class="form">
+                    <input class="form__input" name="personal" type="text" placeholder="Имя*" required>
+                    <input class="form__input" type="tel" name="personal" placeholder="Телефон*" required>
+                    <textarea class="form__textarea" name="comment" placeholder="сообщение"></textarea>
+                <button class="btn btn--light" data-modal-open>отправить</button>
+            </form>
             </div>
         </section>
         <section id="contacts" class="section section--contact"  >
-            <div class="container-half container-half--contact" >
+            <div class="container-half container-half--contact">
                 <h2 class="section__title section__title--white section__title--contact">Контакты</h2>
                 <address>
                     <ul class="contact-list">
@@ -225,7 +231,7 @@
                                 rel="noreferrer noopener"><svg class="contact-list__icon"><use href="./img/sprite.svg.svg#icon-map-pin"></use></svg>ул.
                                 Васильковая, 7А, Киев, 08132</a>
                         </li>
-                        <li class="contact-list__item"><a class="contact-list__link" href="tel:+380441111111"><svg class="contact-list__icon"><use href="./img/sprite.svg.svg#icon-phone"></use></svg>+38044 111
+                        <li class="contact-list__item"><a class="contact-list__link" href="tel:+380441111111"><svg class="contact-list__icon"><use href="./img/sprite.svg.svg#icon-phone"></use></svg>+38 044 111
                                 11 11</a></li>
                         <li class="contact-list__item"><a class="contact-list__link contact-list__link--decoration"
                                 href="mailto:barbershop@email.com"><svg class="contact-list__icon"><use href="./img/sprite.svg.svg#icon-mail"></use></svg>barbershop@email.com</a></li>
@@ -251,6 +257,17 @@
             </ul>
         </div>
     </footer>
+    <div class="backdrop backdrop--is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" aria-label="кнопка закрытия модалки" data-modal-close class="modal__button--close">
+                <svg class="modal__icon--close">
+                <use href="./img/sprite.svg.svg#icon-close-modal"></use></svg></button>
+                <form>
+
+                  </form>
+        </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 
 </html>
