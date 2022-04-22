@@ -177,6 +177,7 @@ a {
 }
 
 .about__list {
+  flex-shrink: 0;
   display: flex;
 }
 
@@ -193,6 +194,7 @@ a {
 }
 
 .about__paragraph {
+  width: 476px;
   margin-bottom: 40px;
   margin-top: 20px;
   font-weight: 400;
@@ -400,6 +402,10 @@ a {
   color: var(--accent-color);
 }
 
+.contact-list__link--exit {
+  align-items: flex-start;
+}
+
 .contact-list__link--decoration {
   text-decoration: underline;
 }
@@ -414,12 +420,17 @@ a {
 }
 
 .contact-list__icon {
+  flex-shrink: 0;
   margin-right: 16px;
   width: 24px;
   height: 24px;
   stroke: #9DA4BD;
   fill: transparent;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-list__icon--exit {
+  margin-top: 8px;
 }
 
 .contact-list__link:hover .contact-list__icon,
@@ -699,7 +710,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
     padding: 0 39px;
@@ -822,7 +833,7 @@ a {
 }
 
 .form__input {
-  min-width: 270px;
+  width: 260px;
   height: 40px;
   padding: 0 0 8px 0;
   background-color: transparent;
@@ -833,17 +844,26 @@ a {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
 }
 
-.form__input:focus {
+.form__input:focus-within {
   color: var(--bg-primary-color);
   border-bottom: 1px solid var(--bg-primary-color);
 }
 
-.form__input:focus::placeholder {
+.form__input::placeholder {
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.form__input:not(:placeholder-shown) {
   color: var(--bg-primary-color);
+  border-bottom: 1px solid var(--bg-primary-color);
+}
+
+.form__input:first-child {
+  width: 270px;
 }
 
 .form__input + .form__input {
@@ -871,11 +891,13 @@ a {
   border-bottom: 1px solid var(--bg-primary-color);
 }
 
-.form__textarea:focus::placeholder {
-  color: var(--bg-primary-color);
+.form__textarea::placeholder {
+  color: inherit;
+  text-transform: uppercase;
 }
 
-.form__textarea::placeholder {
-  text-transform: uppercase;
+.form__textarea:not(:placeholder-shown) {
+  color: var(--bg-primary-color);
+  border-bottom: 1px solid var(--bg-primary-color);
 }
 /*# sourceMappingURL=main.css.map */

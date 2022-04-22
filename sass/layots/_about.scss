@@ -1,5 +1,5 @@
 .about__list{
-
+flex-shrink: 0;
 display: flex;
 }
 .about__item + .about__item{
@@ -15,6 +15,7 @@ margin-bottom: 20px;
 }
 
 .about__paragraph {
+    width: 476px;
     margin-bottom: 40px;
     margin-top: 20px;
     font-weight: 400;

@@ -11,11 +11,14 @@
     line-height: 1.6;
     color: var(--dark-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
+  &--exit{
+    align-items: flex-start;
+}
+
 }
 
 .contact-list__link--decoration {
@@ -32,12 +35,16 @@
 }
 
 .contact-list__icon{
+    flex-shrink: 0;
     margin-right: 16px;
     width: 24px;
     height: 24px;
     stroke: #9DA4BD;
     fill: transparent;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--exit{
+        margin-top: 8px;
+    }
 
 .contact-list__link:hover &,
 .contact-list__link:focus & {
