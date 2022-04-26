@@ -32,7 +32,6 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -1018,7 +1017,7 @@ a {
 
 @media screen and (max-width: 479px) {
   .section {
-    width: 480px;
+    width: 100vw;
   }
 }
 
