@@ -996,7 +996,14 @@ a {
   color: var(--dark-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .basic-decription--price {
+    font-size: 10.5px;
+    line-height: calc(30/10.5);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .basic-decription--price {
     font-size: 14px;
     line-height: calc(30/14);
