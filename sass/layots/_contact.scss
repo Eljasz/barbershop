@@ -1,3 +1,14 @@
+.contact-list{
+    @media screen and (max-width:767px) {
+        width: 418px;
+    }
+    @media screen and (max-width:1199px) {
+        width: 330px;
+    }
+    @media screen and (min-width:1200px) {
+       width: 270px;
+    }
+}
 
 .contact-list__item:not(:last-child) {
     margin-bottom: 20px;
@@ -25,10 +36,6 @@
     text-decoration: underline;
 }
 
-.contact-list__pre-title{
-    display: block;
-    margin-top: 70px;
-}
 
 .contact-list__text{
     margin-top: 20px;
@@ -52,3 +59,13 @@
 }
 }
 
+.contact-wrapper {
+    margin-top: 44px;
+@media screen and (min-width:768px) and (max-width:1199px) {
+    width: 330px;
+    margin-top: 0;
+}
+@media screen and (min-width:1200px) {
+    margin-top: 70px;
+}
+}

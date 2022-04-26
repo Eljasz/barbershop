@@ -1,7 +1,11 @@
 .basic-decription {
+    font-size: 16px;
+    line-height: calc(26/16);  
     font-weight: 400;
+@media screen and (min-width:768px) {
     font-size: 18px;
     line-height: 1.66;
+}
 }
 
 .basic-decription--light {

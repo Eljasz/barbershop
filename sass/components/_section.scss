@@ -1,6 +1,5 @@
 .section {
     padding: 84px 0;
-    outline: 5px solid tomato;
     @media screen and (min-width: 768px) {
         padding: 100px 0;
     }
@@ -21,11 +20,26 @@
         background-color: var(--bg-footer-color);
     }
     &--contact{
-        background-image: url('../img/contacs/img-1-desktop-1x.png');
+        background-image: url(../img//contacs/img-1-mobile-1x.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-color: var(--bg-footer-color);
+        @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){
+        background-image: url(../img/contacs/img-1-mobile-@2x.png);
+    }
+    @media screen  and (min-width:768px) {
+        background-image: url(../img/contacs/img-1-tablet-1x.png);
+        @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){
+            background-image: url(../img/contacs/img-1-tablet-@2x.png);
+        }
+    }
+    @media screen and (min-width:1200px) {
+        background-image: url(../img/contacs/img-1-desktop-1x.png);
+        @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){
+            background-image: url(../img/contacs/img-1-desktop-@2x.png);
+        }
+    }
     }
 }
 
@@ -47,6 +61,12 @@
    &--contact{
     margin-bottom:  40px;
 }
+   &--center{
+       
+@media screen and (max-width:768px) {
+    text-align: center;    
+}
+   }
 }
 
 .section__wrapper{
