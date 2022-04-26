@@ -141,7 +141,7 @@ a {
 
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero__container-right {
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(/img/hero-barber/hero-mobile-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero-barber/hero-mobile-2x.jpg);
   }
 }
 
@@ -913,7 +913,7 @@ a {
 }
 
 .footer {
-  padding: 44 0;
+  padding: 44px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1242,7 +1242,12 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 31px;
-  width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
