@@ -1,7 +1,9 @@
 .container {
     margin: 0 auto;
     padding: 0 31px;
-    width: 480px;
+@media screen and (max-width:768px) {
+    max-width: 480px;
+}
 @media screen and (min-width:768px) and (max-width:1199px) {
     width: 768px;
     padding: 0 39px;
@@ -44,16 +46,16 @@
 .container-half {
         padding: 0 31px;
         margin: 0 auto;
-        width: 480px;
+ @media screen and (max-width:767px) {
+    max-width: 480px;
 
+ }
     @media screen and (min-width:768px) and (max-width:1199px) {
         width: 768px;
         padding: 0 39px;
         margin: 0 auto;
     }
-    @media screen and (min-width:1200px) {
-        padding: 0 15px;
-    }
+
     @media screen and (min-width:1200px) {
         padding: 0 40px 0 15px;
         &--contact{
