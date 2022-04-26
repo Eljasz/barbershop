@@ -996,6 +996,13 @@ a {
   color: var(--dark-color);
 }
 
+@media screen and (max-width: 767px) {
+  .basic-decription--price {
+    font-size: 14px;
+    line-height: calc(30/14);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 60px;
