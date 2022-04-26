@@ -378,6 +378,12 @@ a {
   background-color: var(--bg--dark);
 }
 
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .price-list__section {
+    background-image: url(../img/price-list/price-list-mobile-@2x.png);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .price-list__section {
     background-image: url(../img/price-list/price-list-tablet-1x.png);
