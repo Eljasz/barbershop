@@ -223,7 +223,7 @@ a {
 }
 
 .hero__description {
-  max-width: 306px;
+  width: 306px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1279,7 +1279,7 @@ a {
   padding: 0 31px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     max-width: 480px;
   }
