@@ -74,7 +74,9 @@
 }
 
 .hero__description{
-width: 306px;
+@media screen and (max-width:767px) {
+    max-width: 306px;
+}
 @media screen and (min-width:768px) {
     width: 400px;
 }  
