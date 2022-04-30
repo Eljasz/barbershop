@@ -1,22 +1,29 @@
 {
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/css"
-        },
-        {
-            "format": "compressed",
-            "extensionName": ".min.css",
-            "savePath": "/css"
-        }
-    ],
-    "liveSassCompile.settings.excludeList": [
-        "**/node_modules/**",
-        ".vscode/**"
-    ],
-    "liveSassCompile.settings.generateMap": true,
-    "liveServer.settings.port": 1234,
-    "liveSassCompile.settings.autoprefix": null,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveServer.settings.port": 1234,
+  "liveSassCompile.settings.autoprefix": null,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "formattingToggle.affects": [
+    "editor.formatOnPaste",
+    "editor.formatOnSave",
+    "editor.formatOnType"
+  ],
+  "prettier.embeddedLanguageFormatting": "auto",
+  "json.format.enable": true
 }
