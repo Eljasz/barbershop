@@ -1,1023 +1,928 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="сайт барбершопа" />
-        <title>barbershop</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="./css/main.min.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="сайт барбершопа" />
+    <title>barbershop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-    <body>
-        <header class="header">
-            <div class="container container--header">
-                <nav class="header-nav">
-                    <a href="/index.html" class="logo" aria-label="логотип"
-                        ><svg class="logo__icon">
-                            <use href="./img/sprite.svg.svg#icon-Logo"></use></svg
-                    ></a>
-                    <ul class="site-nav">
-                        <li class="site-nav__item">
-                            <a class="site-nav__link" href="#about-us">О нас</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link" href="#service-price">Услуги и цены</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link" href="#masters">Мастера</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link" href="#contacts">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button
-                    type="button"
-                    class="modal-mobile__button"
-                    data-modal-open
-                    aria-label="кнопка открытия мобильного меню"
+  <body>
+    <header class="header">
+      <div class="container container--header">
+        <nav class="header-nav">
+          <a href="/index.html" class="logo" aria-label="логотип"
+            ><svg class="logo__icon">
+              <use href="./img/sprite.svg.svg#icon-Logo"></use></svg
+          ></a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#about-us">О нас</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#service-price">Услуги и цены</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#masters">Мастера</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="modal-mobile__button"
+          data-modal-open
+          aria-label="кнопка открытия мобильного меню"
+        >
+          <svg class="modal-mobile__icon">
+            <use href="./img/sprite.svg.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="header__wrapper">
+          <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn btn--light btn--main" type="button">онлайн-запись</button>
+        </div>
+      </div>
+      <!-- START OF MOBILE MENU -->
+      <div class="backdrop backdrop--is-hidden" data-modal>
+        <div class="modal">
+          <button
+            class="modal__button-close"
+            data-modal-close
+            aria-label="кнопка закрытия мобильного меню"
+          >
+            <svg class="modal__icon">
+              <use href="./img/sprite.svg.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a class="modal__link" href="#about-us">О нас</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__link" href="#service-price">Услуги и цены</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__link" href="#masters">Мастера</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <div class="modal__wrapper">
+            <a class="modal__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="btn btn--dark" type="button">онлайн-запись</button>
+          </div>
+          <ul class="modal__list-link">
+            <li class="modal__item">
+              <a class="pre-title__link pre-title__link--first" href="">Instagram</a>
+            </li>
+            <li class="modal__item modal__item--link">
+              <a class="pre-title__link" href="">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END OF MOBILE MENU -->
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="container container--hero">
+          <div class="hero__container-left">
+            <ul class="hero-list">
+              <li class="hero-list__item">
+                <a class="pre-title__link pre-title__link--first" href="">Instagram</a>
+              </li>
+              <li class="hero-list__item">
+                <a class="pre-title__link" href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__container-right">
+            <p class="pre-title pre-title--hero" lang="en">A hair salon for men in Kyiv</p>
+            <h1 class="hero__title" lang="en">BarberShop</h1>
+            <p class="basic-decription basic-decription--light hero__description">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT US SECTION -->
+      <section class="section" id="about-us">
+        <div class="container container--about">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/about-us/img-1-desktop-webp-1x.webp  1x,
+                    ./img/about-us/img-1-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/about-us/img-1-desktop-1x.jpg  1x,
+                    ./img/about-us/img-1-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/about-us/img-1-tablet-webp-1x.webp  1x,
+                    ./img/about-us/img-1-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/about-us/img-1-tablet-1x.jpg  1x,
+                    ./img/about-us/img-1-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./img/about-us/img-1-desktop-1x.jpg" alt="мастер бреет бороду мужчине" />
+              </picture>
+            </li>
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/about-us/img-2-desktop-webp-1x.webp  1x,
+                    ./img/about-us/img-2-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/about-us/img-2-desktop-1x.jpg  1x,
+                    ./img/about-us/img-2-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/about-us/img-2-tablet-webp-1x.webp  1x,
+                    ./img/about-us/img-2-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/about-us/img-2-tablet-1x.jpg  1x,
+                    ./img/about-us/img-2-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./img/about-us/img-2-desktop-1x.jpg"
+                  alt="мастер делает аккантовку мужчине"
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="about__wrap">
+            <p class="pre-title pre-title--twenty">О НАС</p>
+            <h2 class="about__title">Лучший Барбершоп твоего города</h2>
+            <p class="about__description">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </p>
+            <p class="about__paragraph">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+
+            <button type="button" class="btn btn--dark">онлайн-запись</button>
+          </div>
+        </div>
+      </section>
+      <!-- PRICE & SERVISE SECTION-->
+      <section id="service-price" class="section price-list__section">
+        <div class="container">
+          <p class="pre-title pre-title--rgba pre-title--twenty">
+            Проведи время в компании лучших мастеров
+          </p>
+          <h2 class="section__title section__title--white section__title--fourtyfour">
+            Услуги и цены
+          </h2>
+          <div class="price-list__wrapper">
+            <ul class="price-list price-list--light">
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light basic-decription--price price-list__text"
                 >
-                    <svg class="modal-mobile__icon">
-                        <use href="./img/sprite.svg.svg#icon-burger"></use>
-                    </svg>
-                </button>
-                <div class="header__wrapper">
-                    <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="btn btn--light btn--main" type="button">онлайн-запись</button>
-                </div>
-            </div>
-            <!-- START OF MOBILE MENU -->
-            <div class="backdrop backdrop--is-hidden" data-modal>
-                <div class="modal">
-                    <button
-                        class="modal__button-close"
-                        data-modal-close
-                        aria-label="кнопка закрытия мобильного меню"
-                    >
-                        <svg class="modal__icon">
-                            <use href="./img/sprite.svg.svg#icon-menu-close"></use>
-                        </svg>
-                    </button>
-                    <ul class="modal__list">
-                        <li class="modal__item">
-                            <a class="modal__link" href="#about-us">О нас</a>
-                        </li>
-                        <li class="modal__item">
-                            <a class="modal__link" href="#service-price">Услуги и цены</a>
-                        </li>
-                        <li class="modal__item">
-                            <a class="modal__link" href="#masters">Мастера</a>
-                        </li>
-                        <li class="modal__item">
-                            <a class="modal__link" href="#contacts">Контакты</a>
-                        </li>
-                    </ul>
-                    <div class="modal__wrapper">
-                        <a class="modal__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                        <button class="btn btn--dark" type="button">онлайн-запись</button>
-                    </div>
-                    <ul class="modal__list-link">
-                        <li class="modal__item">
-                            <a class="pre-title__link pre-title__link--first" href="">Instagram</a>
-                        </li>
-                        <li class="modal__item modal__item--link">
-                            <a class="pre-title__link" href="">Youtube</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- END OF MOBILE MENU -->
-        </header>
-        <main>
-            <!-- HERO SECTION -->
-            <section class="hero">
-                <div class="container container--hero">
-                    <div class="hero__container-left">
-                        <ul class="hero-list">
-                            <li class="hero-list__item">
-                                <a class="pre-title__link pre-title__link--first" href=""
-                                    >Instagram</a
-                                >
-                            </li>
-                            <li class="hero-list__item">
-                                <a class="pre-title__link" href="">Youtube</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="hero__container-right">
-                        <p class="pre-title pre-title--hero" lang="en">
-                            A hair salon for men in Kyiv
-                        </p>
-                        <h1 class="hero__title" lang="en">BarberShop</h1>
-                        <p class="basic-decription basic-decription--light hero__description">
-                            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-                            вкусом.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- ABOUT US SECTION -->
-            <section class="section" id="about-us">
-                <div class="container container--about">
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/about-us/img-1-desktop-webp-1x.webp  1x,
-                                        ./img/about-us/img-1-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/about-us/img-1-desktop-1x.jpg  1x,
-                                        ./img/about-us/img-1-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                  Мужская стрижка
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 300 грн.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light basic-decription--price price-list__text"
+                >
+                  Стрижка бороды
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 200 грн.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light basic-decription--price price-list__text"
+                >
+                  Стрижка усов
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 200 грн.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light basic-decription--price price-list__text"
+                >
+                  Бритье опасной бритвой
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 200 грн.
+                </p>
+              </li>
+            </ul>
 
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/about-us/img-1-tablet-webp-1x.webp  1x,
-                                        ./img/about-us/img-1-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/about-us/img-1-tablet-1x.jpg  1x,
-                                        ./img/about-us/img-1-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-                                <img
-                                    src="./img/about-us/img-1-desktop-1x.jpg"
-                                    alt="мастер бреет бороду мужчине"
-                                />
-                            </picture>
-                        </li>
-                        <li class="about__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/about-us/img-2-desktop-webp-1x.webp  1x,
-                                        ./img/about-us/img-2-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/about-us/img-2-desktop-1x.jpg  1x,
-                                        ./img/about-us/img-2-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+            <ul class="price-list price-list--dark">
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light price-list__text basic-decription--price"
+                >
+                  Cтрижка у стажера
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 50 грн.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light price-list__text basic-decription--price"
+                >
+                  Стрижка под насадку
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 200 грн.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light price-list__text basic-decription--price"
+                >
+                  Детская стрижка (до 12 лет)
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 300 грн.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <p
+                  class="basic-decription basic-decription--light price-list__text basic-decription--price"
+                >
+                  Камуфлирование седины
+                </p>
+                <p class="basic-decription basic-decription--light basic-decription--price">
+                  от 200 грн.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn--light btn--price-list">онлайн-запись</button>
+        </div>
+      </section>
+      <!-- FEATURES SECTION -->
+      <section class="section">
+        <div class="container container--feature-list">
+          <ul class="feature-list">
+            <li class="feature-list__item">
+              <span class="feature__inner">600</span>
+              <p class="feature__text">Довольных клиентов в день</p>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature__inner">50</span>
+              <p class="feature__text">Наград за отличный сервис</p>
+            </li>
+            <li class="feature-list__item">
+              <span class="feature__inner">20</span>
+              <p class="feature__text">Лучших мастеров Киева</p>
+            </li>
+            <li class="feature-list__item feature-list__item--spec">
+              <span class="feature__inner">100</span>
+              <p class="feature__text">Подарков постоянным клиентам</p>
+            </li>
+          </ul>
+          <div class="feature-list__container">
+            <p class="pre-title pre-title--twenty">старая традиционная школа</p>
+            <h2 class="section__title feature-list__title">Почему приходят именно к нам?</h2>
+            <p class="feature-list__description">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
+              прочитать.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- OUR MASTERS SECTION -->
+      <section id="masters" class="section section--masters">
+        <div class="container">
+          <p class="pre-title pre-title--twenty">для настоящих ценителей атмосферы</p>
+          <h2 class="section__title section__title--fourtyfour">Наши мастера</h2>
+          <ul class="masters">
+            <li class="masters__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/masters/img-1-desktop-webp-1x.webp  1x,
+                    ./img/masters/img-1-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/masters/img-1-desktop-1x.jpg  1x,
+                    ./img/masters/img-1-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/about-us/img-2-tablet-webp-1x.webp  1x,
-                                        ./img/about-us/img-2-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/about-us/img-2-tablet-1x.jpg  1x,
-                                        ./img/about-us/img-2-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-                                <img
-                                    src="./img/about-us/img-2-desktop-1x.jpg"
-                                    alt="мастер делает аккантовку мужчине"
-                                />
-                            </picture>
-                        </li>
-                    </ul>
-                    <div class="about__wrap">
-                        <p class="pre-title pre-title--twenty">О НАС</p>
-                        <h2 class="about__title">Лучший Барбершоп твоего города</h2>
-                        <p class="about__description">
-                            Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
-                            нам.
-                        </p>
-                        <p class="about__paragraph">
-                            Мы команда, которая никогда не останавливается на достигнутом и жаждет
-                            перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
-                            сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
-                            волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
-                            приходит!
-                        </p>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/masters/img-1-tablet-webp-1x.webp  1x,
+                    ./img/masters/img-1-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/masters/img-1-tablet-1x.jpg  1x,
+                    ./img/masters/img-1-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                        <button type="button" class="btn btn--dark">онлайн-запись</button>
-                    </div>
-                </div>
-            </section>
-            <!-- PRICE & SERVISE SECTION-->
-            <section id="service-price" class="section price-list__section">
-                <div class="container">
-                    <p class="pre-title pre-title--rgba pre-title--twenty">
-                        Проведи время в компании лучших мастеров
-                    </p>
-                    <h2 class="section__title section__title--white section__title--fourtyfour">
-                        Услуги и цены
-                    </h2>
-                    <div class="price-list__wrapper">
-                        <ul class="price-list price-list--light">
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price price-list__text"
-                                >
-                                    Мужская стрижка
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 300 грн.
-                                </p>
-                            </li>
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price price-list__text"
-                                >
-                                    Стрижка бороды
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 200 грн.
-                                </p>
-                            </li>
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price price-list__text"
-                                >
-                                    Стрижка усов
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 200 грн.
-                                </p>
-                            </li>
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price price-list__text"
-                                >
-                                    Бритье опасной бритвой
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 200 грн.
-                                </p>
-                            </li>
-                        </ul>
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/masters/img-1-mobile-webp-1x.webp  1x,
+                    ./img/masters/img-1-mobile-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="./img/masters/img-1-mobile-1x.jpg 1x, .img/masters/img-1-mobile-2x 2x"
+                  type="image/jpeg"
+                />
+                <img src="./img/masters/img-1-mobile-1x.jpg" alt="Джон Смит стрижет." />
+              </picture>
+              <h3 class="masters__title" lang="en">John Smith</h3>
+              <p class="masters__description" lang="en">Extreme Barber</p>
+              <!-- SOCIAL LINKS LIST -->
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Инстаграм"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Твиттер"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Фейсбук"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Линкэдин"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="masters__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/masters/img-2-desktop-webp-1x.webp  1x,
+                    ./img/masters/img-2-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/masters/img-2-desktop-1x.jpg  1x,
+                    ./img/masters/img-2-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                        <ul class="price-list price-list--dark">
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light price-list__text basic-decription--price"
-                                >
-                                    Cтрижка у стажера
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 50 грн.
-                                </p>
-                            </li>
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light price-list__text basic-decription--price"
-                                >
-                                    Стрижка под насадку
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 200 грн.
-                                </p>
-                            </li>
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light price-list__text basic-decription--price"
-                                >
-                                    Детская стрижка (до 12 лет)
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 300 грн.
-                                </p>
-                            </li>
-                            <li class="price-list__item">
-                                <p
-                                    class="basic-decription basic-decription--light price-list__text basic-decription--price"
-                                >
-                                    Камуфлирование седины
-                                </p>
-                                <p
-                                    class="basic-decription basic-decription--light basic-decription--price"
-                                >
-                                    от 200 грн.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn btn--light btn--price-list">
-                        онлайн-запись
-                    </button>
-                </div>
-            </section>
-            <!-- FEATURES SECTION -->
-            <section class="section">
-                <div class="container container--feature-list">
-                    <ul class="feature-list">
-                        <li class="feature-list__item">
-                            <span class="feature__inner">600</span>
-                            <p class="feature__text">Довольных клиентов в день</p>
-                        </li>
-                        <li class="feature-list__item">
-                            <span class="feature__inner">50</span>
-                            <p class="feature__text">Наград за отличный сервис</p>
-                        </li>
-                        <li class="feature-list__item">
-                            <span class="feature__inner">20</span>
-                            <p class="feature__text">Лучших мастеров Киева</p>
-                        </li>
-                        <li class="feature-list__item feature-list__item--spec">
-                            <span class="feature__inner">100</span>
-                            <p class="feature__text">Подарков постоянным клиентам</p>
-                        </li>
-                    </ul>
-                    <div class="feature-list__container">
-                        <p class="pre-title pre-title--twenty">старая традиционная школа</p>
-                        <h2 class="section__title feature-list__title">
-                            Почему приходят именно к нам?
-                        </h2>
-                        <p class="feature-list__description">
-                            О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
-                            чем 10 раз прочитать.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- OUR MASTERS SECTION -->
-            <section id="masters" class="section section--masters">
-                <div class="container">
-                    <p class="pre-title pre-title--twenty">для настоящих ценителей атмосферы</p>
-                    <h2 class="section__title section__title--fourtyfour">Наши мастера</h2>
-                    <ul class="masters">
-                        <li class="masters__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/masters/img-1-desktop-webp-1x.webp  1x,
-                                        ./img/masters/img-1-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/masters/img-1-desktop-1x.jpg  1x,
-                                        ./img/masters/img-1-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-wdith:768px)"
+                  srcset="
+                    ./img/masters/img-2-desktop-webp-1x.webp 1x,
+                    ./img/masters/img-2-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-wdith:768px)"
+                  srcset="
+                    ./img/masters/img-2-tablet-1x.jpg  1x,
+                    ./img/masters/img-2-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/masters/img-1-tablet-webp-1x.webp  1x,
-                                        ./img/masters/img-1-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/masters/img-1-tablet-1x.jpg  1x,
-                                        ./img/masters/img-1-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/masters/img-2-mobile-webp-1x.webp  1x,
+                    ./img/masters/img-2-mobile-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/masters/img-2-mobile-1x.jpg  1x,
+                    ./img/masters/img-2-mobile-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/masters/img-1-mobile-webp-1x.webp  1x,
-                                        ./img/masters/img-1-mobile-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/masters/img-1-mobile-1x.jpg 1x,
-                                        .img/masters/img-1-mobile-2x      2x
-                                    "
-                                    type="image/jpeg"
-                                />
-                                <img
-                                    src="./img/masters/img-1-mobile-1x.jpg"
-                                    alt="Джон Смит стрижет."
-                                />
-                            </picture>
-                            <h3 class="masters__title" lang="en">John Smith</h3>
-                            <p class="masters__description" lang="en">Extreme Barber</p>
-                            <!-- SOCIAL LINKS LIST -->
-                            <ul class="social">
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Инстаграм"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-instagram"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Твиттер"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-twitter"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Фейсбук"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-facebook"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Линкэдин"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-linkedin"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="masters__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/masters/img-2-desktop-webp-1x.webp  1x,
-                                        ./img/masters/img-2-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/masters/img-2-desktop-1x.jpg  1x,
-                                        ./img/masters/img-2-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <img src="./img/masters/img-2-mobile-1x.jpg" alt="Мишель Доэ стрижет." />
+              </picture>
+              <h3 lang="en" class="masters__title">Michele Doe</h3>
+              <p lang="en" class="masters__description">Extreme Barber</p>
+              <!-- SOCIAL LINKS LIST -->
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Инстаграм"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Твиттер"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Фейсбук"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Линкэдин"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="masters__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/masters/img-3-desktop-webp-1x.webp  1x,
+                    ./img/masters/img-3-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/masters/img-3-desktop-1x.jpg  1x,
+                    ./img/masters/img-3-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-wdith:768px)"
-                                    srcset="
-                                        ./img/masters/img-2-desktop-webp-1x.webp 1x,
-                                        ./img/masters/img-2-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-wdith:768px)"
-                                    srcset="
-                                        ./img/masters/img-2-tablet-1x.jpg  1x,
-                                        ./img/masters/img-2-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/masters/img-3-tablet-webp-1x.webp  1x,
+                    ./img/masters/img-3-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/masters/img-3-tablet-1x.jpg  1x,
+                    ./img/masters/img-3-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/masters/img-2-mobile-webp-1x.webp  1x,
-                                        ./img/masters/img-2-mobile-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/masters/img-2-mobile-1x.jpg  1x,
-                                        ./img/masters/img-2-mobile-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/masters/img-3-mobile-webp-1x.webp  1x,
+                    ./img/masters/img-3-mobile-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/masters/img-3-mobile-1x.jpg   1x,
+                    ./img/masters/img-3-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <img
-                                    src="./img/masters/img-2-mobile-1x.jpg"
-                                    alt="Мишель Доэ стрижет."
-                                />
-                            </picture>
-                            <h3 lang="en" class="masters__title">Michele Doe</h3>
-                            <p lang="en" class="masters__description">Extreme Barber</p>
-                            <!-- SOCIAL LINKS LIST -->
-                            <ul class="social">
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Инстаграм"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-instagram"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Твиттер"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-twitter"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Фейсбук"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-facebook"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Линкэдин"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-linkedin"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="masters__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/masters/img-3-desktop-webp-1x.webp  1x,
-                                        ./img/masters/img-3-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/masters/img-3-desktop-1x.jpg  1x,
-                                        ./img/masters/img-3-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <img src="./img/masters/img-3-mobile-1x.jpg" alt="Алан Блэк стрижет." />
+              </picture>
+              <h3 lang="en" class="masters__title">Alan Black</h3>
+              <p lang="en" class="masters__description">Extreme Barber</p>
+              <!-- SOCIAL LINKS LIST -->
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Инстаграм"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Твиттер"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Фейсбук"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Линкэдин"
+                    ><svg class="social__icon">
+                      <use href="./img/sprite.svg.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">Галлерея</h2>
+          <p class="pre-title section__title--fourtyfour">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <ul class="galary">
+            <li class="galary__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/gallery/img-1-desktop-webp-1x.webp  1x,
+                    ./img/gallery/img-1-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/gallery/img-1-desktop-1x.jpg  1x,
+                    ./img/gallery/img-1-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/masters/img-3-tablet-webp-1x.webp  1x,
-                                        ./img/masters/img-3-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/masters/img-3-tablet-1x.jpg  1x,
-                                        ./img/masters/img-3-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-1-tablet-webp-1x.webp  1x,
+                    ./img/gallery/img-1-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-1-tablet-1x.jpg  1x,
+                    ./img/gallery/img-1-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/masters/img-3-mobile-webp-1x.webp  1x,
-                                        ./img/masters/img-3-mobile-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/masters/img-3-mobile-1x.jpg   1x,
-                                        ./img/masters/img-3-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-1-mobile-webp-1x.webp  1x,
+                    ./img/gallery/img-1-mobile-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-1-mobile-1x.jpg  1x,
+                    ./img/gallery/img-1-mobile-@2x.jpg 2x
+                  "
+                />
+                <img src="./img/gallery/img-1-mobile-1x.jpg" alt="Наш мастер бреет." />
+              </picture>
+            </li>
+            <li class="galary__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/gallery/img-2-desktop-webp-1x.webp  1x,
+                    ./img/gallery/img-2-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/gallery/img-2-desktop-1x.jpg  1x,
+                    ./img/gallery/img-2-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <img
-                                    src="./img/masters/img-3-mobile-1x.jpg"
-                                    alt="Алан Блэк стрижет."
-                                />
-                            </picture>
-                            <h3 lang="en" class="masters__title">Alan Black</h3>
-                            <p lang="en" class="masters__description">Extreme Barber</p>
-                            <!-- SOCIAL LINKS LIST -->
-                            <ul class="social">
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Инстаграм"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-instagram"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Твиттер"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-twitter"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Фейсбук"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-facebook"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="" aria-label="Линкэдин"
-                                        ><svg class="social__icon">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-linkedin"
-                                            ></use></svg
-                                    ></a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="section">
-                <div class="container">
-                    <h2 class="visually-hidden">Галлерея</h2>
-                    <p class="pre-title section__title--fourtyfour">
-                        На латинском языке “барба” означает “борода”
-                    </p>
-                    <ul class="galary">
-                        <li class="galary__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-1-desktop-webp-1x.webp  1x,
-                                        ./img/gallery/img-1-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-1-desktop-1x.jpg  1x,
-                                        ./img/gallery/img-1-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-2-tablet-webp-1x.webp  1x,
+                    ./img/gallery/img-2-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-2-tablet-1x.jpg  1x,
+                    ./img/gallery/img-2-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-1-tablet-webp-1x.webp  1x,
-                                        ./img/gallery/img-1-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-1-tablet-1x.jpg  1x,
-                                        ./img/gallery/img-1-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-2-mobile-webp-1x.webp  1x,
+                    ./img/gallery/img-2-mobile-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-2-mobile-1x.jpg   1x,
+                    ./img/gallery/img-2-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./img/gallery/img-2-mobile-1x.jpg" alt="Наш мастер стрижет." />
+              </picture>
+            </li>
+            <li class="galary__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/gallery/img-3-desktop-webp-1x.webp  1x,
+                    ./img/gallery/img-3-desktop-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/gallery/img-3-desktop-1x.jpg  1x,
+                    ./img/gallery/img-3-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-1-mobile-webp-1x.webp  1x,
-                                        ./img/gallery/img-1-mobile-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-1-mobile-1x.jpg  1x,
-                                        ./img/gallery/img-1-mobile-@2x.jpg 2x
-                                    "
-                                />
-                                <img
-                                    src="./img/gallery/img-1-mobile-1x.jpg"
-                                    alt="Наш мастер бреет."
-                                />
-                            </picture>
-                        </li>
-                        <li class="galary__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-2-desktop-webp-1x.webp  1x,
-                                        ./img/gallery/img-2-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-2-desktop-1x.jpg  1x,
-                                        ./img/gallery/img-2-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-3-tablet-webp-1x.webp  1x,
+                    ./img/gallery/img-3-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-3-tablet-1x.jpg  1x,
+                    ./img/gallery/img-3-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-2-tablet-webp-1x.webp  1x,
-                                        ./img/gallery/img-2-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-2-tablet-1x.jpg  1x,
-                                        ./img/gallery/img-2-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-3-mobile-webp-1x.webp  1x,
+                    ./img/gallery/img-3-mobile-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-3-mobile-1x.jpg   1x,
+                    ./img/gallery/img-3-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./img/gallery/img-3-mobile-1x.jpg" alt="Наш мастер в процессе работы." />
+              </picture>
+            </li>
+            <li class="galary__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./img/gallery/img-4-webp-1x.webp 1x, ./img/gallery/img-4-webp-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/gallery/img-4-desktop-1x.jpg  1x,
+                    ./img/gallery/img-4-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-2-mobile-webp-1x.webp  1x,
-                                        ./img/gallery/img-2-mobile-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-2-mobile-1x.jpg   1x,
-                                        ./img/gallery/img-2-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-                                <img
-                                    src="./img/gallery/img-2-mobile-1x.jpg"
-                                    alt="Наш мастер стрижет."
-                                />
-                            </picture>
-                        </li>
-                        <li class="galary__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-3-desktop-webp-1x.webp  1x,
-                                        ./img/gallery/img-3-desktop-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-3-desktop-1x.jpg  1x,
-                                        ./img/gallery/img-3-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-4-tablet-webp-1x.webp  1x,
+                    ./img/gallery/img-4-tablet-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/gallery/img-3-tablet-1x.jpg  1x,
+                    ./img/gallery/img-4-tablet-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-3-tablet-webp-1x.webp  1x,
-                                        ./img/gallery/img-3-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-3-tablet-1x.jpg  1x,
-                                        ./img/gallery/img-3-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-3-mobile-webp-1x.webp  1x,
-                                        ./img/gallery/img-3-mobile-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-3-mobile-1x.jpg   1x,
-                                        ./img/gallery/img-3-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-                                <img
-                                    src="./img/gallery/img-3-mobile-1x.jpg"
-                                    alt="Наш мастер в процессе работы."
-                                />
-                            </picture>
-                        </li>
-                        <li class="galary__item">
-                            <picture>
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-4-webp-1x.webp  1x,
-                                        ./img/gallery/img-4-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:1200px)"
-                                    srcset="
-                                        ./img/gallery/img-4-desktop-1x.jpg  1x,
-                                        ./img/gallery/img-4-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-4-tablet-webp-1x.webp  1x,
-                                        ./img/gallery/img-4-tablet-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:768px)"
-                                    srcset="
-                                        ./img/gallery/img-3-tablet-1x.jpg  1x,
-                                        ./img/gallery/img-4-tablet-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-4-mobile-webp-1x.webp  1x,
-                                        ./img/gallery/img-4-mobile-webp-@2x.webp 2x
-                                    "
-                                    type="image/webp"
-                                />
-                                <source
-                                    media="(min-width:480px)"
-                                    srcset="
-                                        ./img/gallery/img-4-mobile-1x.jpg   1x,
-                                        ./img/gallery/img-4-desktop-@2x.jpg 2x
-                                    "
-                                    type="image/jpeg"
-                                />
-                                <img
-                                    src="./img/gallery/img-4-mobile-1x.jpg"
-                                    alt="Наш мастер бреет."
-                                />
-                            </picture>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <div class="section__wrapper">
-                <section class="section section--online">
-                    <div class="container-half container-half--online">
-                        <h2
-                            class="section__title section__title--white section__title--fourtyfour section__title--center"
-                        >
-                            Онлайн-запись
-                        </h2>
-                        <form class="form">
-                            <input
-                                class="form__input"
-                                name="personal"
-                                type="text"
-                                placeholder="Имя*"
-                                required
-                            />
-                            <input
-                                class="form__input"
-                                type="tel"
-                                name="personal"
-                                placeholder="Телефон*"
-                                required
-                            />
-                            <textarea
-                                class="form__textarea"
-                                name="comment"
-                                placeholder="сообщение"
-                            ></textarea>
-                            <button class="btn btn--light" data-modal-open>отправить</button>
-                        </form>
-                    </div>
-                </section>
-                <section id="contacts" class="section section--contact">
-                    <div class="container-half container-half--contact">
-                        <h2
-                            class="section__title section__title--white section__title--contact section__title--center"
-                        >
-                            Контакты
-                        </h2>
-                        <address>
-                            <ul class="contact-list">
-                                <li class="contact-list__item">
-                                    <a
-                                        class="contact-list__link contact-list__link--exit"
-                                        href=""
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                        ><svg class="contact-list__icon contact-list__icon--exit">
-                                            <use
-                                                href="./img/sprite.svg.svg#icon-map-pin"
-                                            ></use></svg
-                                        >ул. Васильковая, 7А Киев, 08132</a
-                                    >
-                                </li>
-                                <li class="contact-list__item">
-                                    <a class="contact-list__link" href="tel:+380441111111"
-                                        ><svg class="contact-list__icon">
-                                            <use href="./img/sprite.svg.svg#icon-phone"></use></svg
-                                        >+38 044 111 11 11</a
-                                    >
-                                </li>
-                                <li class="contact-list__item">
-                                    <a
-                                        class="contact-list__link contact-list__link--decoration"
-                                        href="mailto:barbershop@email.com"
-                                        ><svg class="contact-list__icon">
-                                            <use href="./img/sprite.svg.svg#icon-mail"></use></svg
-                                        >barbershop@email.com</a
-                                    >
-                                </li>
-                            </ul>
-                            <div class="contact-wrapper">
-                                <b class="pre-title pre-title--white">Время работы</b>
-                                <p
-                                    class="basic-decription basic-decription--light contact-list__text"
-                                >
-                                    Ежедневно с 9:00 до 22:00
-                                </p>
-                            </div>
-                        </address>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="container container--footer">
-                <a href="" class="footer__link">&copy; Copyright</a>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a class="pre-title__link pre-title__link--first" href="">Instagram</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="pre-title__link" href="">Youtube</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <script src="./js/modal.js" type="module"></script>
-    </body>
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-4-mobile-webp-1x.webp  1x,
+                    ./img/gallery/img-4-mobile-webp-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    ./img/gallery/img-4-mobile-1x.jpg   1x,
+                    ./img/gallery/img-4-desktop-@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./img/gallery/img-4-mobile-1x.jpg" alt="Наш мастер бреет." />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="section__wrapper">
+        <section class="section section--online">
+          <div class="container-half container-half--online">
+            <h2
+              class="section__title section__title--white section__title--fourtyfour section__title--center"
+            >
+              Онлайн-запись
+            </h2>
+            <form class="form">
+              <input class="form__input" name="personal" type="text" placeholder="Имя*" required />
+              <input
+                class="form__input"
+                type="tel"
+                name="personal"
+                placeholder="Телефон*"
+                required
+              />
+              <textarea class="form__textarea" name="comment" placeholder="сообщение"></textarea>
+              <button class="btn btn--light" data-modal-open>отправить</button>
+            </form>
+          </div>
+        </section>
+        <section id="contacts" class="section section--contact">
+          <div class="container-half container-half--contact">
+            <h2
+              class="section__title section__title--white section__title--contact section__title--center"
+            >
+              Контакты
+            </h2>
+            <address>
+              <ul class="contact-list">
+                <li class="contact-list__item">
+                  <a
+                    class="contact-list__link contact-list__link--exit"
+                    href=""
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><svg class="contact-list__icon contact-list__icon--exit">
+                      <use href="./img/sprite.svg.svg#icon-map-pin"></use></svg
+                    >ул. Васильковая, 7А Киев, 08132</a
+                  >
+                </li>
+                <li class="contact-list__item">
+                  <a class="contact-list__link" href="tel:+380441111111"
+                    ><svg class="contact-list__icon">
+                      <use href="./img/sprite.svg.svg#icon-phone"></use></svg
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contact-list__item">
+                  <a
+                    class="contact-list__link contact-list__link--decoration"
+                    href="mailto:barbershop@email.com"
+                    ><svg class="contact-list__icon">
+                      <use href="./img/sprite.svg.svg#icon-mail"></use></svg
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+              <div class="contact-wrapper">
+                <b class="pre-title pre-title--white">Время работы</b>
+                <p class="basic-decription basic-decription--light contact-list__text">
+                  Ежедневно с 9:00 до 22:00
+                </p>
+              </div>
+            </address>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container container--footer">
+        <a href="" class="footer__link">&copy; Copyright</a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="pre-title__link pre-title__link--first" href="">Instagram</a>
+          </li>
+          <li class="footer__item">
+            <a class="pre-title__link" href="">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/modal.js" type="module"></script>
+  </body>
 </html>
