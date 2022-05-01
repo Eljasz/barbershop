@@ -15,15 +15,14 @@
   "liveSassCompile.settings.generateMap": true,
   "liveServer.settings.port": 1234,
   "liveSassCompile.settings.autoprefix": null,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "formattingToggle.affects": [
     "editor.formatOnPaste",
     "editor.formatOnSave",
     "editor.formatOnType"
   ],
   "prettier.embeddedLanguageFormatting": "auto",
-  "json.format.enable": true
+  "json.format.enable": true,
+  "prettier.enableDebugLogs": false,
+  "prettier.printWidth": 100,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
