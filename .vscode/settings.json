@@ -20,9 +20,6 @@
     "editor.formatOnSave",
     "editor.formatOnType"
   ],
-  "prettier.embeddedLanguageFormatting": "auto",
   "json.format.enable": true,
-  "prettier.enableDebugLogs": false,
-  "prettier.printWidth": 100,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": null
 }
