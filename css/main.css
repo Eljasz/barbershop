@@ -867,12 +867,6 @@ a {
   transition: all 250ms cubic-bezier(1, 0.99, 0, -0.01);
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    display: none;
-  }
-}
-
 .modal__button-close {
   position: absolute;
   top: 48px;
@@ -1489,6 +1483,12 @@ a {
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    display: none;
+  }
 }
 
 .backdrop--is-hidden {
